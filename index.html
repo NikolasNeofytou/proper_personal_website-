@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Personal portfolio website showcasing projects, skills, and professional background">
-    <meta name="author" content="Your Name">
-    <meta name="keywords" content="portfolio, web developer, projects, skills">
+    <meta name="author" content="Nikolas Neofytou">
+    <meta name="keywords" content="portfolio, web developer, projects, skills, photography, writing, substack">
     
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Your Name - Portfolio">
-    <meta property="og:description" content="Personal portfolio showcasing projects and skills">
+    <meta property="og:title" content="Nikolas Neofytou - Portfolio">
+    <meta property="og:description" content="Developer, Writer, and Photographer - Showcasing projects, writings, and creative work">
     <meta property="og:type" content="website">
     
-    <title>Your Name - Portfolio</title>
+    <title>Nikolas Neofytou - Portfolio</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
@@ -28,7 +28,7 @@
     <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
             <a href="#home" class="logo" aria-label="Home">
-                <span class="logo-text">Your Name</span>
+                <span class="logo-text">Nikolas Neofytou</span>
             </a>
             
             <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu" aria-expanded="false">
@@ -39,6 +39,8 @@
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#writing" class="nav-link">Writing</a></li>
+                <li><a href="#photography" class="nav-link">Photography</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -52,26 +54,29 @@
     <!-- Hero Section -->
     <section id="home" class="hero" role="banner">
         <div class="hero-content">
+            <div class="hero-greeting">Hello, I'm</div>
             <h1 class="hero-title">
-                Hi, I'm <span class="highlight">Your Name</span>
+                <span class="highlight">Nikolas Neofytou</span>
             </h1>
-            <p class="hero-subtitle">Web Developer & Designer</p>
+            <p class="hero-subtitle">Developer • Writer • Photographer</p>
             <p class="hero-description">
-                I create beautiful, functional, and user-friendly websites and applications.
+                I build innovative software solutions, share my thoughts through writing,
+                and capture the world through my lens. Welcome to my creative space.
             </p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                <a href="#writing" class="btn btn-secondary">Read My Writing</a>
+                <a href="#photography" class="btn btn-secondary">See My Photography</a>
             </div>
             <div class="social-links">
-                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <a href="https://github.com/NikolasNeofytou" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
+                <a href="https://substack.com/@nikolasneofytou" target="_blank" rel="noopener noreferrer" aria-label="Substack">
+                    <i class="fas fa-newspaper"></i>
                 </a>
-                <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                    <i class="fab fa-twitter"></i>
+                <a href="https://linkedin.com/in/nikolas-neofytou" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
                 </a>
             </div>
         </div>
@@ -89,16 +94,16 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        Welcome to my portfolio! I'm a passionate web developer with experience in creating 
-                        modern, responsive websites and applications. I love turning complex problems into 
-                        simple, beautiful, and intuitive designs.
+                        I'm Nikolas Neofytou, a developer passionate about building innovative solutions that solve real-world problems. 
+                        My work focuses on creating practical applications ranging from university utilities to sports coordination platforms.
                     </p>
                     <p>
-                        When I'm not coding, you can find me learning new technologies, contributing to 
-                        open-source projects, or sharing my knowledge with the developer community.
+                        Beyond coding, I'm an active writer on Substack where I share insights on technology, development, and ideas. 
+                        I also enjoy photography and art, capturing moments and creating visual stories. My diverse interests fuel my 
+                        creativity and bring unique perspectives to everything I build.
                     </p>
-                    <a href="assets/resume.pdf" class="btn btn-primary" download>
-                        <i class="fas fa-download"></i> Download Resume
+                    <a href="https://github.com/NikolasNeofytou" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i> View GitHub Profile
                     </a>
                 </div>
                 <div class="about-image">
@@ -112,89 +117,244 @@
     <section id="projects" class="projects section">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle">Here are some of my recent works</p>
+            <p class="section-subtitle">My GitHub pinned repositories and recent work</p>
             
             <div class="projects-grid">
-                <!-- Project 1 -->
+                <!-- Project 1: Soccer Matcher -->
                 <article class="project-card">
                     <div class="project-image">
-                        <img src="assets/project1.jpg" alt="Project 1 screenshot" loading="lazy">
+                        <div class="project-placeholder">
+                            <i class="fas fa-futbol fa-5x"></i>
+                        </div>
                         <div class="project-overlay">
-                            <a href="https://project1-demo.com" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                            <a href="https://github.com/yourusername/project1" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/NikolasNeofytou/proper_soccer_matcher" class="project-link" target="_blank" rel="noopener noreferrer">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <h3 class="project-title">Soccer Matcher</h3>
                         <p class="project-description">
-                            A full-featured e-commerce platform with shopping cart, payment integration, 
-                            and admin dashboard.
+                            An app that brings organization between players and pitch owners, making it easier 
+                            to coordinate and schedule soccer games.
                         </p>
                         <div class="project-tech">
+                            <span class="tech-tag">TypeScript</span>
                             <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Web App</span>
                         </div>
                     </div>
                 </article>
 
-                <!-- Project 2 -->
+                <!-- Project 2: University Forum -->
                 <article class="project-card">
                     <div class="project-image">
-                        <img src="assets/project2.jpg" alt="Project 2 screenshot" loading="lazy">
+                        <div class="project-placeholder">
+                            <i class="fas fa-comments fa-5x"></i>
+                        </div>
                         <div class="project-overlay">
-                            <a href="https://project2-demo.com" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                            <a href="https://github.com/yourusername/project2" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/NikolasNeofytou/better_ece_forum" class="project-link" target="_blank" rel="noopener noreferrer">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Task Management App</h3>
+                        <h3 class="project-title">Better ECE Forum</h3>
                         <p class="project-description">
-                            A collaborative task management application with real-time updates and 
-                            team collaboration features.
+                            An attempt to enhance the forum of my university, providing better communication 
+                            and collaboration features for students.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">Vue.js</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Forum</span>
+                            <span class="tech-tag">Education</span>
                         </div>
                     </div>
                 </article>
 
-                <!-- Project 3 -->
+                <!-- Project 3: Card Game Player -->
                 <article class="project-card">
                     <div class="project-image">
-                        <img src="assets/project3.jpg" alt="Project 3 screenshot" loading="lazy">
+                        <div class="project-placeholder">
+                            <i class="fas fa-gamepad fa-5x"></i>
+                        </div>
                         <div class="project-overlay">
-                            <a href="https://project3-demo.com" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                            <a href="https://github.com/yourusername/project3" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/NikolasNeofytou/card_game_player" class="project-link" target="_blank" rel="noopener noreferrer">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Weather Dashboard</h3>
+                        <h3 class="project-title">Card Game Player</h3>
                         <p class="project-description">
-                            A responsive weather dashboard with location-based forecasts and 
-                            interactive data visualizations.
+                            Modernizing the playing card games experience to make socializing over games 
+                            more fun and accessible online.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">API</span>
-                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">Gaming</span>
+                            <span class="tech-tag">Social</span>
+                            <span class="tech-tag">WebApp</span>
                         </div>
                     </div>
                 </article>
+
+                <!-- Project 4: Utilities WPA -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-tools fa-5x"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/NikolasNeofytou/proper_utilities_wpa" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Utilities WPA</h3>
+                        <p class="project-description">
+                            A progressive web application providing various utility tools and features 
+                            for everyday tasks.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">PWA</span>
+                            <span class="tech-tag">Utilities</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5: University Website -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-university fa-5x"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/NikolasNeofytou/uni-website" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">University Website</h3>
+                        <p class="project-description">
+                            A comprehensive website project for university resources and information, 
+                            with 1 star on GitHub.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Web</span>
+                            <span class="tech-tag">Education</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6: Third Generation Grader -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-graduation-cap fa-5x"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/NikolasNeofytou/third_generation_grader" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Third Generation Grader</h3>
+                        <p class="project-description">
+                            An advanced grading system built with Python to streamline the evaluation 
+                            process for educational purposes.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Education</span>
+                            <span class="tech-tag">Automation</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="view-more-projects">
+                <a href="https://github.com/NikolasNeofytou?tab=repositories" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i> View All Projects on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Writing Section -->
+    <section id="writing" class="writing section">
+        <div class="container">
+            <h2 class="section-title">Writing & Thoughts</h2>
+            <p class="section-subtitle">Latest articles from my Substack</p>
+            
+            <div class="writing-grid" id="substackPosts">
+                <!-- Posts will be dynamically loaded here -->
+                <div class="writing-placeholder">
+                    <i class="fas fa-spinner fa-spin fa-3x"></i>
+                    <p>Loading latest posts...</p>
+                </div>
+            </div>
+            
+            <div class="view-more-writing">
+                <a href="https://substack.com/@nikolasneofytou" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-newspaper"></i> Read All Articles on Substack
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photography & Art Section -->
+    <section id="photography" class="photography section">
+        <div class="container">
+            <h2 class="section-title">Photography & Art</h2>
+            <p class="section-subtitle">A collection of my visual creations</p>
+            
+            <div class="photography-grid">
+                <!-- Photography items will be displayed here -->
+                <div class="photo-item">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera fa-3x"></i>
+                        <p>Add your photos to assets/photography/</p>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-palette fa-3x"></i>
+                        <p>Share your art collection</p>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-image fa-3x"></i>
+                        <p>Showcase your creative work</p>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera-retro fa-3x"></i>
+                        <p>Visual storytelling</p>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-brush fa-3x"></i>
+                        <p>Artistic expressions</p>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-mountain fa-3x"></i>
+                        <p>Capture the moment</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="photography-note">
+                <p><i class="fas fa-info-circle"></i> Add your photography images to <code>assets/photography/</code> folder to display your collection</p>
             </div>
         </div>
     </section>
@@ -341,16 +501,16 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 Your Name. All rights reserved.</p>
+                <p>&copy; 2024 Nikolas Neofytou. All rights reserved.</p>
                 <div class="footer-social">
-                    <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <a href="https://github.com/NikolasNeofytou" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
+                    <a href="https://substack.com/@nikolasneofytou" target="_blank" rel="noopener noreferrer" aria-label="Substack">
+                        <i class="fas fa-newspaper"></i>
                     </a>
-                    <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                        <i class="fab fa-twitter"></i>
+                    <a href="https://linkedin.com/in/nikolas-neofytou" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
                     </a>
                 </div>
             </div>

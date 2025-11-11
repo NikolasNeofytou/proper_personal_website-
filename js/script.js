@@ -373,3 +373,101 @@ document.addEventListener('DOMContentLoaded', () => {
     
     console.log('Portfolio website loaded successfully! 🚀');
 });
+
+// ==========================================
+// Substack Posts Loading
+// ==========================================
+async function loadSubstackPosts() {
+    const substackContainer = document.getElementById('substackPosts');
+    const substackUsername = 'nikolasneofytou';
+    
+    try {
+        // Note: Due to CORS restrictions, we'll show placeholder posts
+        // In production, you would need a backend proxy or use Substack's RSS feed
+        const placeholderPosts = [
+            {
+                title: "Latest Insights on Technology and Development",
+                date: "Recent",
+                excerpt: "Exploring the intersection of innovation, coding practices, and creative problem-solving in modern software development.",
+                link: `https://substack.com/@${substackUsername}`
+            },
+            {
+                title: "Thoughts on Building Better Applications",
+                date: "Recent",
+                excerpt: "Sharing experiences and lessons learned from building practical applications that solve real-world problems.",
+                link: `https://substack.com/@${substackUsername}`
+            },
+            {
+                title: "The Journey of a Developer and Creator",
+                date: "Recent",
+                excerpt: "Reflections on balancing multiple creative pursuits including development, writing, and photography.",
+                link: `https://substack.com/@${substackUsername}`
+            }
+        ];
+        
+        // Clear loading message
+        substackContainer.innerHTML = '';
+        
+        // Display posts
+        placeholderPosts.forEach(post => {
+            const postCard = document.createElement('div');
+            postCard.className = 'writing-card';
+            postCard.innerHTML = `
+                <h3>${post.title}</h3>
+                <div class="post-meta">
+                    <span><i class="fas fa-calendar"></i> ${post.date}</span>
+                </div>
+                <p class="post-excerpt">${post.excerpt}</p>
+                <a href="${post.link}" target="_blank" rel="noopener noreferrer" class="read-more">
+                    Read More <i class="fas fa-arrow-right"></i>
+                </a>
+            `;
+            
+            postCard.addEventListener('click', (e) => {
+                if (e.target.tagName !== 'A') {
+                    window.open(post.link, '_blank');
+                }
+            });
+            
+            substackContainer.appendChild(postCard);
+        });
+        
+        // Add note about connecting to actual Substack feed
+        const note = document.createElement('div');
+        note.className = 'writing-placeholder';
+        note.style.fontSize = '0.9rem';
+        note.style.padding = '1rem';
+        note.innerHTML = `
+            <p><i class="fas fa-info-circle"></i> These are placeholder posts. 
+            Visit <a href="https://substack.com/@${substackUsername}" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color);">
+            my Substack</a> to read actual articles.</p>
+        `;
+        substackContainer.appendChild(note);
+        
+    } catch (error) {
+        console.error('Error loading Substack posts:', error);
+        substackContainer.innerHTML = `
+            <div class="writing-placeholder">
+                <p><i class="fas fa-exclamation-circle"></i> Unable to load posts. 
+                Please visit <a href="https://substack.com/@${substackUsername}" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color);">
+                my Substack directly</a>.</p>
+            </div>
+        `;
+    }
+}
+
+// ==========================================
+// Initialize on Load
+// ==========================================
+document.addEventListener('DOMContentLoaded', () => {
+    // Add loaded class to body for CSS transitions
+    document.body.classList.add('loaded');
+    
+    // Initial navigation highlight
+    highlightNavigation();
+    
+    // Load Substack posts
+    loadSubstackPosts();
+    
+    console.log('Portfolio website loaded successfully! 🚀');
+});

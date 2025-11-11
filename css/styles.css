@@ -817,3 +817,218 @@ button {
 .fade-in {
     animation: fadeIn 0.6s ease-out;
 }
+
+/* ==========================================
+   Hero Greeting Enhancement
+   ========================================== */
+.hero-greeting {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: var(--spacing-xs);
+    font-weight: 500;
+}
+
+/* ==========================================
+   Project Placeholder Styles
+   ========================================== */
+.project-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.view-more-projects {
+    text-align: center;
+    margin-top: var(--spacing-lg);
+}
+
+/* ==========================================
+   Writing Section
+   ========================================== */
+.writing {
+    background-color: var(--bg-color);
+}
+
+.writing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.writing-card {
+    background-color: var(--bg-secondary);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-md);
+    box-shadow: 0 5px 20px var(--shadow);
+    transition: all var(--transition-speed);
+    cursor: pointer;
+}
+
+.writing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px var(--shadow-hover);
+}
+
+.writing-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-color);
+}
+
+.writing-card .post-meta {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.writing-card .post-excerpt {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-sm);
+}
+
+.writing-card .read-more {
+    color: var(--primary-color);
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.writing-placeholder {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: var(--spacing-lg);
+    color: var(--text-light);
+}
+
+.view-more-writing {
+    text-align: center;
+    margin-top: var(--spacing-lg);
+}
+
+/* ==========================================
+   Photography Section
+   ========================================== */
+.photography {
+    background-color: var(--bg-secondary);
+}
+
+.photography-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.photo-item {
+    position: relative;
+    aspect-ratio: 1;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: 0 5px 20px var(--shadow);
+    transition: all var(--transition-speed);
+}
+
+.photo-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 40px var(--shadow-hover);
+}
+
+.photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-speed);
+}
+
+.photo-item:hover img {
+    transform: scale(1.1);
+}
+
+.photo-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    background: linear-gradient(135deg, var(--bg-color) 0%, var(--bg-secondary) 100%);
+    color: var(--text-light);
+    padding: var(--spacing-md);
+    text-align: center;
+    border: 2px dashed var(--border-color);
+}
+
+.photo-placeholder i {
+    color: var(--primary-color);
+}
+
+.photo-placeholder p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.photography-note {
+    text-align: center;
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background-color: var(--bg-color);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--primary-color);
+}
+
+.photography-note p {
+    margin: 0;
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xs);
+}
+
+.photography-note code {
+    background-color: var(--bg-secondary);
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--radius-sm);
+    font-family: 'Courier New', monospace;
+    color: var(--primary-color);
+}
+
+/* ==========================================
+   Responsive Updates for New Sections
+   ========================================== */
+@media (max-width: 768px) {
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .writing-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .photography-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .photography-grid {
+        grid-template-columns: 1fr;
+    }
+}
