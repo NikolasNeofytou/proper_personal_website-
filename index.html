@@ -9,7 +9,7 @@
     
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:title" content="Nikolas Neofytou - Portfolio">
-    <meta property="og:description" content="Developer, Writer, and Photographer - Showcasing projects, writings, and creative work">
+    <meta property="og:description" content="ECE student, Author, Athlete and  Photographer - Showcasing projects, writings, and creative work">
     <meta property="og:type" content="website">
     
     <title>Nikolas Neofytou - Portfolio</title>
@@ -42,6 +42,8 @@
                 <li><a href="#writing" class="nav-link">Writing</a></li>
                 <li><a href="#photography" class="nav-link">Photography</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#lab" class="nav-link">Lab</a></li>
+                <!-- <li><a href="#heroes" class="nav-link">Heroes</a></li> -->
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             
@@ -58,7 +60,7 @@
             <h1 class="hero-title">
                 <span class="highlight">Nikolas Neofytou</span>
             </h1>
-            <p class="hero-subtitle">Developer • Writer • Photographer</p>
+            <p class="hero-subtitle">Electrical & Computer Engineering student at NTUA · Embedded systems, robotics & control</p>
             <p class="hero-description">
                 I build innovative software solutions, share my thoughts through writing,
                 and capture the world through my lens. Welcome to my creative space.
@@ -102,12 +104,96 @@
                         I also enjoy photography and art, capturing moments and creating visual stories. My diverse interests fuel my 
                         creativity and bring unique perspectives to everything I build.
                     </p>
-                    <a href="https://github.com/NikolasNeofytou" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-github"></i> View GitHub Profile
-                    </a>
+                    <div class="about-buttons">
+                        <a href="https://github.com/NikolasNeofytou" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> View GitHub Profile
+                        </a>
+                        <a href="assets/cv.pdf" class="btn btn-secondary" download="Nikolas_Neofytou_CV.pdf">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                    </div>
                 </div>
                 <div class="about-image">
                     <img src="assets/profile.jpg" alt="Profile picture" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Timeline Section -->
+    <section id="timeline" class="timeline-section section">
+        <div class="container">
+            <h2 class="section-title">Academic Journey</h2>
+            <p class="section-subtitle">My educational path and achievements</p>
+            
+            <div class="timeline-cv-button">
+                <a href="assets/cv.pdf" class="btn btn-primary" download="Nikolas_Neofytou_CV.pdf">
+                    <i class="fas fa-download"></i> Download Full CV
+                </a>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Oct 2022 - Present</div>
+                        <h3>MEng Electrical & Computer Engineering</h3>
+                        <p class="timeline-institution">National Technical University of Athens (NTUA)</p>
+                        <p class="timeline-description">
+                            Specialization: Electronics, Systems and Embedded Computers. Expected graduation: June 2027.
+                            Coursework: Digital Signal Processing, Control Systems Design, Microcomputer Systems, Operating Systems, VLSI.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jul 2025 - Sep 2025</div>
+                        <h3>Electrical Engineering Internship</h3>
+                        <p class="timeline-institution">SignalGeneriX</p>
+                        <p class="timeline-description">
+                            Designed comprehensive test plans for AI edge boards (Ethernet, RS-485, CAN, USB, CSI, GPIO, PCIe).
+                            Automated verification processes using Linux/Bash/Python. Created documentation templates for lab team.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jun 2024 - Nov 2023</div>
+                        <h3>Software Engineering Internship</h3>
+                        <p class="timeline-institution">PHOEBE</p>
+                        <p class="timeline-description">
+                            Developed web application fetching official fuel prices and ranking stations by price/distance.
+                            Implemented API integration and responsive UI with full development documentation.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jul 2021 - Jul 2022</div>
+                        <h3>Military Service - Leadership Role</h3>
+                        <p class="timeline-institution">Cyprus National Guard</p>
+                        <p class="timeline-description">
+                            Honorary promotion for ethics and leadership. Trained and guided team of 10 in daily operations and safety protocols.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Sep 2014 - Jun 2020</div>
+                        <h3>High School Diploma</h3>
+                        <p class="timeline-institution">Pascal English School</p>
+                        <p class="timeline-description">
+                            GPA: 19.8/20 (2nd in class of 80). A-Levels: Physics (A), Mathematics (A), Greek (A*).
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -313,137 +399,439 @@
             <h2 class="section-title">Photography & Art</h2>
             <p class="section-subtitle">A collection of my visual creations</p>
             
-            <div class="photography-grid">
-                <!-- Photography items will be displayed here -->
-                <div class="photo-item">
-                    <div class="photo-placeholder">
-                        <i class="fas fa-camera fa-3x"></i>
-                        <p>Add your photos to assets/photography/</p>
+            <div class="photography-grid" id="photoGallery">
+                <div class="photo-item" data-index="0">
+                    <img src="assets/photography/DE7A0564-CFA9-4C60-8882-51E2B5B8C99A.jpg" alt="Photography by Nikolas Neofytou" loading="lazy">
+                    <div class="photo-overlay">
+                        <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
-                <div class="photo-item">
-                    <div class="photo-placeholder">
-                        <i class="fas fa-palette fa-3x"></i>
-                        <p>Share your art collection</p>
+                <div class="photo-item" data-index="1">
+                    <img src="assets/photography/DSC01033.JPG" alt="Photography by Nikolas Neofytou" loading="lazy">
+                    <div class="photo-overlay">
+                        <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
-                <div class="photo-item">
-                    <div class="photo-placeholder">
-                        <i class="fas fa-image fa-3x"></i>
-                        <p>Showcase your creative work</p>
+                <div class="photo-item" data-index="2">
+                    <img src="assets/photography/DSC01034.JPG" alt="Photography by Nikolas Neofytou" loading="lazy">
+                    <div class="photo-overlay">
+                        <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
-                <div class="photo-item">
-                    <div class="photo-placeholder">
-                        <i class="fas fa-camera-retro fa-3x"></i>
-                        <p>Visual storytelling</p>
+                <div class="photo-item" data-index="3">
+                    <img src="assets/photography/DSC01035.JPG" alt="Photography by Nikolas Neofytou" loading="lazy">
+                    <div class="photo-overlay">
+                        <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
-                <div class="photo-item">
-                    <div class="photo-placeholder">
-                        <i class="fas fa-brush fa-3x"></i>
-                        <p>Artistic expressions</p>
-                    </div>
-                </div>
-                <div class="photo-item">
-                    <div class="photo-placeholder">
-                        <i class="fas fa-mountain fa-3x"></i>
-                        <p>Capture the moment</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="photography-note">
-                <p><i class="fas fa-info-circle"></i> Add your photography images to <code>assets/photography/</code> folder to display your collection</p>
             </div>
         </div>
     </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <span class="lightbox-prev">&#10094;</span>
+        <span class="lightbox-next">&#10095;</span>
+        <img class="lightbox-content" id="lightboxImg" alt="">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
 
     <!-- Skills Section -->
     <section id="skills" class="skills section">
         <div class="container">
             <h2 class="section-title">Skills & Technologies</h2>
-            <p class="section-subtitle">Technologies I work with</p>
+            <p class="section-subtitle">Engineering competencies and tools</p>
             
             <div class="skills-grid">
                 <div class="skill-category">
                     <h3 class="category-title">
-                        <i class="fas fa-code"></i> Frontend
+                        <i class="fas fa-microchip"></i> Embedded & Hardware
                     </h3>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <i class="fab fa-html5"></i>
-                            <span>HTML5</span>
+                            <i class="fas fa-microchip"></i>
+                            <span>STM32</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fab fa-css3-alt"></i>
-                            <span>CSS3</span>
+                            <i class="fas fa-microchip"></i>
+                            <span>AVR</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fab fa-js"></i>
-                            <span>JavaScript</span>
+                            <i class="fas fa-microchip"></i>
+                            <span>Arduino</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fab fa-react"></i>
-                            <span>React</span>
+                            <i class="fas fa-microchip"></i>
+                            <span>Jetson Orin Nano</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fab fa-vuejs"></i>
-                            <span>Vue.js</span>
+                            <i class="fas fa-wave-square"></i>
+                            <span>Oscilloscope</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-waveform"></i>
+                            <span>Function Generator</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-bolt"></i>
+                            <span>Multimeter</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Logic Analyzer</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-pencil-ruler"></i>
+                            <span>PCB Design (Altium)</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="skill-category">
                     <h3 class="category-title">
-                        <i class="fas fa-server"></i> Backend
+                        <i class="fas fa-robot"></i> Control & Robotics
                     </h3>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <i class="fab fa-node-js"></i>
-                            <span>Node.js</span>
+                            <i class="fas fa-sliders-h"></i>
+                            <span>PID Control</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>Root Locus</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-area"></i>
+                            <span>Bode/Nyquist</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-vector-square"></i>
+                            <span>State-Space Control</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-eye"></i>
+                            <span>Observers</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-bullseye"></i>
+                            <span>LQR</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-robot"></i>
+                            <span>Kinematics</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>Dynamics</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-border-all"></i>
+                            <span>Denavit-Hartenberg</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-grip-lines"></i>
+                            <span>Jacobians</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-robot"></i>
+                            <span>Cobot Programming</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-laptop-code"></i> Software & Tools
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C++</span>
                         </div>
                         <div class="skill-item">
                             <i class="fab fa-python"></i>
                             <span>Python</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <span>MongoDB</span>
+                            <i class="fas fa-calculator"></i>
+                            <span>MATLAB/Simulink</span>
                         </div>
-                        <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <span>PostgreSQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3 class="category-title">
-                        <i class="fas fa-tools"></i> Tools & Others
-                    </h3>
-                    <div class="skill-items">
                         <div class="skill-item">
                             <i class="fab fa-git-alt"></i>
                             <span>Git</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
+                            <i class="fab fa-linux"></i>
+                            <span>Linux</span>
                         </div>
                         <div class="skill-item">
                             <i class="fab fa-docker"></i>
                             <span>Docker</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-mobile-alt"></i>
-                            <span>Responsive Design</span>
+                            <i class="fas fa-server"></i>
+                            <span>Django</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-flask"></i>
+                            <span>Flask</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-palette"></i> Adobe Creative Cloud
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-image"></i>
+                            <span>Photoshop</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Premiere Pro</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-film"></i>
+                            <span>After Effects</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-bezier-curve"></i>
+                            <span>Illustrator</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>Adobe XD</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-book"></i>
+                            <span>InDesign</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-camera"></i>
+                            <span>Lightroom</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-pencil-alt"></i>
+                            <span>Adobe Express</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Lab & Equipment Section -->
+    <section id="lab" class="lab section">
+        <div class="container">
+            <h2 class="section-title">Personal Lab & Equipment</h2>
+            <p class="section-subtitle">Hardware and tools I work with in my personal projects</p>
+            
+            <div class="lab-grid">
+                <!-- Development Boards -->
+                <div class="lab-category">
+                    <div class="lab-category-header">
+                        <i class="fas fa-microchip"></i>
+                        <h3>Development Boards</h3>
+                    </div>
+                    <ul class="lab-items">
+                        <li><i class="fas fa-check-circle"></i> STM32 Nucleo Board</li>
+                        <li><i class="fas fa-check-circle"></i> Arduino Uno/Mega</li>
+                        <li><i class="fas fa-check-circle"></i> ESP32 Dev Board</li>
+                        <li><i class="fas fa-check-circle"></i> Raspberry Pi 4</li>
+                        <li><i class="fas fa-check-circle"></i> NVIDIA Jetson Orin Nano</li>
+                    </ul>
+                </div>
+
+                <!-- Test Equipment -->
+                <div class="lab-category">
+                    <div class="lab-category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Test & Measurement</h3>
+                    </div>
+                    <ul class="lab-items">
+                        <li><i class="fas fa-check-circle"></i> Digital Oscilloscope</li>
+                        <li><i class="fas fa-check-circle"></i> Function Generator</li>
+                        <li><i class="fas fa-check-circle"></i> Logic Analyzer</li>
+                        <li><i class="fas fa-check-circle"></i> Multimeter (Fluke)</li>
+                        <li><i class="fas fa-check-circle"></i> Power Supply (Variable)</li>
+                        <li><i class="fas fa-check-circle"></i> Soldering Station</li>
+                    </ul>
+                </div>
+
+                <!-- Communication Interfaces -->
+                <div class="lab-category">
+                    <div class="lab-category-header">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>Interface Modules</h3>
+                    </div>
+                    <ul class="lab-items">
+                        <li><i class="fas fa-check-circle"></i> USB-to-Serial Adapters</li>
+                        <li><i class="fas fa-check-circle"></i> CAN Bus Module</li>
+                        <li><i class="fas fa-check-circle"></i> RS-485 Converter</li>
+                        <li><i class="fas fa-check-circle"></i> Ethernet Module</li>
+                        <li><i class="fas fa-check-circle"></i> I2C/SPI Breakout Boards</li>
+                    </ul>
+                </div>
+
+                <!-- Sensors & Actuators -->
+                <div class="lab-category">
+                    <div class="lab-category-header">
+                        <i class="fas fa-sensor"></i>
+                        <h3>Sensors & Actuators</h3>
+                    </div>
+                    <ul class="lab-items">
+                        <li><i class="fas fa-check-circle"></i> IMU (Gyro/Accelerometer)</li>
+                        <li><i class="fas fa-check-circle"></i> Temperature Sensors</li>
+                        <li><i class="fas fa-check-circle"></i> Servo Motors</li>
+                        <li><i class="fas fa-check-circle"></i> Stepper Motors & Drivers</li>
+                        <li><i class="fas fa-check-circle"></i> Ultrasonic/IR Sensors</li>
+                        <li><i class="fas fa-check-circle"></i> Camera Module (CSI)</li>
+                    </ul>
+                </div>
+
+                <!-- Adobe Creative Cloud -->
+                <div class="lab-category">
+                    <div class="lab-category-header">
+                        <i class="fas fa-palette"></i>
+                        <h3>Adobe Creative Cloud</h3>
+                    </div>
+                    <ul class="lab-items">
+                        <li><i class="fas fa-check-circle"></i> Photoshop</li>
+                        <li><i class="fas fa-check-circle"></i> Premiere Pro</li>
+                        <li><i class="fas fa-check-circle"></i> After Effects</li>
+                        <li><i class="fas fa-check-circle"></i> Illustrator</li>
+                        <li><i class="fas fa-check-circle"></i> Adobe XD</li>
+                        <li><i class="fas fa-check-circle"></i> InDesign</li>
+                        <li><i class="fas fa-check-circle"></i> Lightroom</li>
+                        <li><i class="fas fa-check-circle"></i> Adobe Express</li>
+                    </ul>
+                </div>
+
+                <!-- Components -->
+                <div class="lab-category">
+                    <div class="lab-category-header">
+                        <i class="fas fa-boxes"></i>
+                        <h3>Components & Parts</h3>
+                    </div>
+                    <ul class="lab-items">
+                        <li><i class="fas fa-check-circle"></i> Resistor/Capacitor Kit</li>
+                        <li><i class="fas fa-check-circle"></i> MOSFETs & Transistors</li>
+                        <li><i class="fas fa-check-circle"></i> Voltage Regulators</li>
+                        <li><i class="fas fa-check-circle"></i> Op-Amps & Comparators</li>
+                        <li><i class="fas fa-check-circle"></i> Breadboards & Jumper Wires</li>
+                        <li><i class="fas fa-check-circle"></i> LED Strips & Displays</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heroes & Mentors Section - Hidden for now -->
+    <!--
+    <section id="heroes" class="heroes section">
+        <div class="container">
+            <h2 class="section-title">Heroes & Mentors</h2>
+            <p class="section-subtitle">Ancient wisdom and modern inspiration that guide my journey</p>
+            
+            <div class="heroes-content">
+                <div class="heroes-category">
+                    <h3 class="heroes-category-title">
+                        <i class="fas fa-landmark"></i>
+                        Ancient Greek Heroes
+                    </h3>
+                    <div class="heroes-grid">
+                        <div class="hero-card">
+                            <div class="hero-icon">Α</div>
+                            <h4 class="hero-name">Archimedes</h4>
+                            <p class="hero-title">Mathematician & Engineer</p>
+                            <p class="hero-quote">"Give me a lever long enough and a fulcrum on which to place it, and I shall move the world."</p>
+                            <p class="hero-impact">Pioneer of engineering principles, inventor, and the father of mathematical physics.</p>
+                        </div>
+                        
+                        <div class="hero-card">
+                            <div class="hero-icon">Σ</div>
+                            <h4 class="hero-name">Socrates</h4>
+                            <p class="hero-title">Philosopher</p>
+                            <p class="hero-quote">"The unexamined life is not worth living."</p>
+                            <p class="hero-impact">Master of critical thinking and the Socratic method, teaching wisdom through questioning.</p>
+                        </div>
+                        
+                        <div class="hero-card">
+                            <div class="hero-icon">Π</div>
+                            <h4 class="hero-name">Pythagoras</h4>
+                            <p class="hero-title">Mathematician & Philosopher</p>
+                            <p class="hero-quote">"Number is the ruler of forms and ideas."</p>
+                            <p class="hero-impact">Founded mathematical principles that underpin modern engineering and science.</p>
+                        </div>
+                        
+                        <div class="hero-card">
+                            <div class="hero-icon">Λ</div>
+                            <h4 class="hero-name">Leonidas</h4>
+                            <p class="hero-title">Spartan King & Warrior</p>
+                            <p class="hero-quote">"Μολὼν λαβέ" (Come and take them)</p>
+                            <p class="hero-impact">Exemplified courage, leadership, and sacrifice at Thermopylae.</p>
+                        </div>
+                        
+                        <div class="hero-card">
+                            <div class="hero-icon">Φ</div>
+                            <h4 class="hero-name">Aristotle</h4>
+                            <p class="hero-title">Philosopher & Scientist</p>
+                            <p class="hero-quote">"We are what we repeatedly do. Excellence, then, is not an act, but a habit."</p>
+                            <p class="hero-impact">Founded logic and scientific method, bridging philosophy and empirical observation.</p>
+                        </div>
+                        
+                        <div class="hero-card">
+                            <div class="hero-icon">Ω</div>
+                            <h4 class="hero-name">Odysseus</h4>
+                            <p class="hero-title">King of Ithaca & Hero</p>
+                            <p class="hero-quote">"There is a time for many words, and there is also a time for sleep."</p>
+                            <p class="hero-impact">Embodied cunning intelligence (μῆτις), perseverance, and strategic thinking.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="heroes-category">
+                    <h3 class="heroes-category-title">
+                        <i class="fas fa-users"></i>
+                        Modern Mentors & Inspiration
+                    </h3>
+                    <div class="heroes-grid modern-mentors">
+                        <div class="hero-card modern">
+                            <div class="hero-icon">🚀</div>
+                            <h4 class="hero-name">Elon Musk</h4>
+                            <p class="hero-title">Engineer & Entrepreneur</p>
+                            <p class="hero-quote">"When something is important enough, you do it even if the odds are not in your favor."</p>
+                            <p class="hero-impact">Pushing boundaries in space exploration, electric vehicles, and sustainable energy.</p>
+                        </div>
+                        
+                        <div class="hero-card modern">
+                            <div class="hero-icon">💡</div>
+                            <h4 class="hero-name">Nikola Tesla</h4>
+                            <p class="hero-title">Inventor & Electrical Engineer</p>
+                            <p class="hero-quote">"The present is theirs; the future, for which I really worked, is mine."</p>
+                            <p class="hero-impact">Revolutionary contributions to AC power systems and electromagnetic engineering.</p>
+                        </div>
+                        
+                        <div class="hero-card modern">
+                            <div class="hero-icon">⚡</div>
+                            <h4 class="hero-name">Richard Feynman</h4>
+                            <p class="hero-title">Physicist</p>
+                            <p class="hero-quote">"What I cannot create, I do not understand."</p>
+                            <p class="hero-impact">Master of explaining complex physics with clarity, curiosity, and deep understanding.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -457,21 +845,21 @@
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h3>Email</h3>
-                            <a href="mailto:your.email@example.com">your.email@example.com</a>
+                            <a href="mailto:nikiforialicht@gmail.com">nikiforialicht@gmail.com</a>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
                             <h3>Location</h3>
-                            <p>Your City, Country</p>
+                            <p>Athens, Greece</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
                         <div>
                             <h3>Phone</h3>
-                            <a href="tel:+1234567890">+1 (234) 567-890</a>
+                            <a href="tel:+35796666897">+357 96 666 897</a>
                         </div>
                     </div>
                 </div>
@@ -501,7 +889,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 Nikolas Neofytou. All rights reserved.</p>
+                <p>&copy; 2025 Nikolas Neofytou. All rights reserved.</p>
                 <div class="footer-social">
                     <a href="https://github.com/NikolasNeofytou" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                         <i class="fab fa-github"></i>
