@@ -1,40 +1,13 @@
 /**
  * Personal Portfolio Website - Main JavaScript
- * Handles theme switching, navigation, form submission, and interactive features
+ * Handles navigation, form submission, and interactive features
  */
 
 // ==========================================
-// Theme Management
+// Force Dark Theme
 // ==========================================
-const themeToggle = document.getElementById('themeToggle');
-const themeIcon = document.getElementById('themeIcon');
 const html = document.documentElement;
-
-// Load saved theme or default to light
-const currentTheme = localStorage.getItem('theme') || 'light';
-html.setAttribute('data-theme', currentTheme);
-updateThemeIcon(currentTheme);
-
-// Theme toggle event listener
-themeToggle.addEventListener('click', () => {
-    const theme = html.getAttribute('data-theme');
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    
-    html.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-    updateThemeIcon(newTheme);
-});
-
-// Update theme icon based on current theme
-function updateThemeIcon(theme) {
-    if (theme === 'dark') {
-        themeIcon.classList.remove('fa-moon');
-        themeIcon.classList.add('fa-sun');
-    } else {
-        themeIcon.classList.remove('fa-sun');
-        themeIcon.classList.add('fa-moon');
-    }
-}
+html.setAttribute('data-theme', 'dark');
 
 // ==========================================
 // Mobile Navigation
