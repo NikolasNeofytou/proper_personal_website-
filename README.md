@@ -186,8 +186,6 @@ Open source - feel free to fork and customize for your own portfolio!
 
 Made with ⚡ by an ECE student passionate about electronics and control systems
 
-- Design inspired by modern web development trends
-
 ---
 
 Made with ⚡ by an ECE student passionate about electronics and control systems
