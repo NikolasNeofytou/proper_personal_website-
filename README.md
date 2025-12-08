@@ -177,7 +177,7 @@ Open source - feel free to fork and customize for your own portfolio!
 
 ## 🙏 Credits
 
-**Built by**: Nikolas Neofytou with AI assistance (GitHub Copilot)  
+**Built by**: Nikolas Neofytou  
 **Design**: Custom futuristic electrical engineering theme  
 **Icons**: Font Awesome 6.4.0  
 **Fonts**: Google Fonts (Orbitron, Rajdhani, Share Tech Mono)
